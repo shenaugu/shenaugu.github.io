@@ -11,7 +11,7 @@ email: shenaugu@usc.edu
 # --- URLs --------------------------------------------------------------------
 # For a user site (username.github.io) leave baseurl empty.
 # For a project site (username.github.io/repo) set: baseurl: "/repo"
-url: ""
+url: "https://shenaugu.github.io"
 baseurl: ""
 
 # --- Build -------------------------------------------------------------------
