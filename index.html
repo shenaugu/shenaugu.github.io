@@ -1,0 +1,78 @@
+---
+layout: default
+title: ""
+---
+<section class="hero">
+  <div class="hero-photo">
+    <img src="{{ '/assets/img/avatar.svg' | relative_url }}" alt="Portrait of Augustus Shen">
+  </div>
+  <div class="hero-text">
+    <h1 class="hero-name">Augustus&nbsp;Shen</h1>
+    <p class="hero-affil">Undergraduate Researcher · <a href="https://www.fosterlab.science/" rel="noopener">Foster Lab</a>, USC</p>
+    <p class="hero-lede">
+      I study how molecular motors burn energy to organize living matter.
+      My work sits at the intersection of <strong>quantitative cell biology</strong>
+      and <strong>non&#8209;equilibrium physics</strong> — using kinesin&#8211;microtubule
+      systems to ask how microscopic energy dissipation gives rise to large&#8209;scale order.
+    </p>
+    <p class="hero-links">
+      <a class="btn" href="{{ '/research/' | relative_url }}">Research</a>
+      <a class="btn btn-ghost" href="{{ '/cv/Augustus_Shen_CV.pdf' | relative_url }}">Download CV</a>
+      <a class="btn btn-ghost" href="mailto:{{ site.email }}">Email</a>
+    </p>
+  </div>
+</section>
+
+<section class="home-block">
+  <h2>About</h2>
+  <p>
+    I&#8217;m a B.S. candidate in <strong>Quantitative Biology</strong> (minor in Chemistry) at the
+    USC Dornsife College of Letters, Arts and Sciences, graduating in May&nbsp;2028. Since
+    January&nbsp;2025 I&#8217;ve been a researcher in the <a href="https://www.fosterlab.science/">Foster Lab</a>,
+    where I build and characterize reconstituted cytoskeletal systems to understand the
+    physical bioenergetics of active matter.
+  </p>
+  <p>
+    I like problems that live between the wet bench and the laptop: cloning a motor protein
+    in the morning, then modeling its collective behavior in the afternoon. This site is the
+    starting point of that journey — a place to keep my research, reading notes, and progress
+    in the open.
+  </p>
+</section>
+
+<section class="home-block">
+  <h2>Research Interests</h2>
+  <ul class="interest-grid">
+    <li>
+      <h3>Active cytoskeletal matter</h3>
+      <p>How kinesin motors and microtubules self&#8209;organize into contracting, flowing networks far from equilibrium.</p>
+    </li>
+    <li>
+      <h3>Physical bioenergetics</h3>
+      <p>Linking molecular&#8209;scale ATP consumption to mesoscale structural order using NADH&#8209;coupled assays and LC&#8209;PolScope imaging.</p>
+    </li>
+    <li>
+      <h3>Stochastic transport modeling</h3>
+      <p>Gillespie / SSA simulations of motor traffic on 1D lattices — crowding, jams, and plus&#8209;end accumulation.</p>
+    </li>
+    <li>
+      <h3>In&nbsp;vitro reconstitution</h3>
+      <p>From plasmid design and baculovirus expression to protein purification and quantitative confocal microscopy.</p>
+    </li>
+  </ul>
+</section>
+
+<section class="home-block">
+  <div class="block-head">
+    <h2>Latest Notes</h2>
+    <a class="more-link" href="{{ '/blog/' | relative_url }}">All notes →</a>
+  </div>
+  <ul class="post-list compact">
+    {% for post in site.posts limit:3 %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

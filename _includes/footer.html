@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-links">
+      {% if site.social.email %}<a href="mailto:{{ site.social.email }}">Email</a>{% endif %}
+      {% if site.social.github != "" %}<a href="https://github.com/{{ site.social.github }}">GitHub</a>{% endif %}
+      {% if site.social.scholar != "" %}<a href="{{ site.social.scholar }}">Google Scholar</a>{% endif %}
+      {% if site.social.orcid != "" %}<a href="https://orcid.org/{{ site.social.orcid }}">ORCID</a>{% endif %}
+      {% if site.social.linkedin != "" %}<a href="{{ site.social.linkedin }}">LinkedIn</a>{% endif %}
+    </p>
+    <p class="footer-meta">© {{ 'now' | date: "%Y" }} Augustus Shen · Los Angeles, CA · Built with Jekyll</p>
+  </div>
+</footer>

@@ -1,0 +1,48 @@
+# --- Site identity -----------------------------------------------------------
+title: Augustus Shen
+tagline: "Quantitative Biology · Foster Lab @ USC"
+description: >-
+  Augustus (Jiashang) Shen — undergraduate researcher in quantitative cell
+  biology and non-equilibrium physics at the Foster Lab, University of
+  Southern California.
+author: Augustus Shen
+email: shenaugu@usc.edu
+
+# --- URLs --------------------------------------------------------------------
+# For a user site (username.github.io) leave baseurl empty.
+# For a project site (username.github.io/repo) set: baseurl: "/repo"
+url: ""
+baseurl: ""
+
+# --- Build -------------------------------------------------------------------
+permalink: /blog/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+timezone: America/Los_Angeles
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Every top-level page uses the "page" layout unless it says otherwise.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+# --- Social / contact links (used in the footer & home) ----------------------
+social:
+  email: shenaugu@usc.edu
+  # Fill these in when you have them, then they appear automatically:
+  github: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github
